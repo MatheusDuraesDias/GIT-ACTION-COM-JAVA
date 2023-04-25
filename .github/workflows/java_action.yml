@@ -1,7 +1,4 @@
-# This workflow will build a Java project with Ant
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-ant
-
-name: Java CI
+name: JavadoMODOLO
 
 on:
   push:
@@ -10,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  COMPILAR:
 
     runs-on: ubuntu-latest
 
@@ -21,5 +18,11 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
-    - name: Build with Ant
-      run: ant -noinput -buildfile build.xml
+    - name: Compliando no Java
+      run: |
+          cd src
+          javac -cp . Main.java
+    - name: Rodando o progrma
+      run: |
+          cd src
+          java -cp . Main
