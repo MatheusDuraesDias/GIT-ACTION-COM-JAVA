@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class classTest {
 
-    public static void class_test(String[] args) {
+    public static void main(String[] args) {
         System.out.println("Hello world!");
 
         Colaborador c = new Colaborador("Alfredo Games", 89765432, 9876543, "01/01/2001", "01/01/2023", "manhã");
