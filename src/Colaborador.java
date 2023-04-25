@@ -8,6 +8,18 @@ public class Colaborador {
     private String dataDeAgendamento;
     private String periodo;
 
+    @Override
+    public String toString() {
+        return "Colaborador{" +
+                "nome='" + nome + '\'' +
+                ", CPF=" + CPF +
+                ", telefone=" + telefone +
+                ", dataNascimento='" + dataNascimento + '\'' +
+                ", dataDeAgendamento='" + dataDeAgendamento + '\'' +
+                ", periodo='" + periodo + '\'' +
+                '}';
+    }
+
     public Colaborador(String nome, int cpf, int telefone, String dataNascimento, String dataDeAgendamento, String periodo) {
         this.nome = nome;
         CPF = cpf;
