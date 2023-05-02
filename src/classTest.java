@@ -19,5 +19,7 @@ public class classTest {
         for (int i = 0; i<colaboradores.length; i++){
             System.out.println(colaboradores[i].toString());
         }
+
+        throw new RuntimeException("Teste exceção");
     }
 }
