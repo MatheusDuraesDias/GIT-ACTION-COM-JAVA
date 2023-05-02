@@ -16,6 +16,8 @@ public class classTest {
         colaboradores[1] = c1;
         colaboradores[2] = c2;
 
-        System.out.println(c.toString());
+        for (int i = 0; i<colaboradores.length; i++){
+            System.out.println(colaboradores[i].toString());
+        }
     }
 }
