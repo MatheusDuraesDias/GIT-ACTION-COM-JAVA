@@ -20,6 +20,6 @@ public class classTest {
             System.out.println(colaboradores[i].toString());
         }
 
-        throw new RuntimeException("Teste exceção");
+//        throw new RuntimeException("Teste exceção");
     }
 }
