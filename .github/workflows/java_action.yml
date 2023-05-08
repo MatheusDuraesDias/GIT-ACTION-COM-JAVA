@@ -26,7 +26,7 @@ jobs:
       run: |
           cd src
           java -cp . classTest
-    - uses: mr_smithers-excellent/docker-build-push@v6
+    - uses: mr-smithers-excellent/docker-build-push@v6
       name: Build & push docker image
       with:
         image: matheus230100/poo_java
