@@ -34,5 +34,5 @@ jobs:
         registry: docker.io
         dockerfile: src/.
         username: matheus230100
-        password: teteucraft
+        password: ${{secrets.DOCKER_PASSWORD}}
         
